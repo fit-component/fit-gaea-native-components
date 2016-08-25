@@ -2,9 +2,9 @@ export interface PropsInterface extends FitGaea.ComponentProps {
 }
 
 export class Props implements PropsInterface {
-    name = '段落'
-    icon = 'align-justify'
-    uniqueKey = 'gaea-paragraph'
+    name = '文字'
+    icon = 'font'
+    uniqueKey = 'gaea-text'
 
     options = {
         text: {

@@ -3,7 +3,7 @@ export interface PropsInterface extends FitGaea.ComponentProps {
 }
 
 export class Props implements PropsInterface {
-    name = '布局'
+    name = '视图'
     icon = 'square-o'
     uniqueKey = 'gaea-layout'
 

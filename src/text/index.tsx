@@ -3,7 +3,7 @@ import * as module from './module'
 import {others} from '../../../../common/transmit-transparently/src'
 const {Text} = require('react-native')
 
-export default class ParagraphComponent extends React.Component <module.PropsInterface, module.StateInterface> {
+export default class TextComponent extends React.Component <module.PropsInterface, module.StateInterface> {
     static defaultProps: module.PropsInterface = new module.Props()
     public state: module.StateInterface = new module.State()
 
@@ -12,8 +12,10 @@ export default class ParagraphComponent extends React.Component <module.PropsInt
             fontSize: this.props.options['fontSize'].value
         }
 
+        const otherProps = others(new module.Props(), this.props, null, true)
+
         return (
-            <Text style={style}>{this.props.options['text'].value}</Text>
+            <Text {...otherProps} style={style}>{this.props.options['text'].value}</Text>
         )
     }
 }

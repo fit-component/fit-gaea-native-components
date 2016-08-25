@@ -3,7 +3,7 @@ import * as module from './module'
 import {others} from '../../../../common/transmit-transparently/src'
 const {View, Dimensions} = require('react-native')
 
-export default class LayoutComponent extends React.Component <module.PropsInterface, module.StateInterface> {
+export default class LViewComponent extends React.Component <module.PropsInterface, module.StateInterface> {
     static defaultProps: module.PropsInterface = new module.Props()
     public state: module.StateInterface = new module.State()
 
@@ -19,8 +19,10 @@ export default class LayoutComponent extends React.Component <module.PropsInterf
             overflow: this.props.options['overflow'].value
         }
 
+        const otherProps = others(new module.Props(), this.props, null, true)
+
         return (
-            <View style={style}>{this.props.children}</View>
+            <View {...otherProps} style={style}>{this.props.children}</View>
         )
     }
 }

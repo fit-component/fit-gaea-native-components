@@ -2,7 +2,8 @@
 /// <reference path="../../gaea/models/tsd.d.ts" />
 
 import * as React from 'react'
-import Layout from './layout'
-import Paragraph from './paragraph'
+import View from './view'
+import Text from './text'
+import TextInput from './text-input'
 
-export default [Layout, Paragraph] as Array<React.ComponentClass<FitGaea.ComponentProps>>
+export default [View, Text, TextInput] as Array<React.ComponentClass<FitGaea.ComponentProps>>
