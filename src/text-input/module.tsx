@@ -20,7 +20,7 @@ export class PropsGaea {
     }]
 }
 
-export class Props implements PropsInterface {
+export class Props extends PropsGaea implements PropsInterface {
     fontSize = 14
     placeholder = '请输入内容'
 }

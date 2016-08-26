@@ -117,7 +117,7 @@ export class PropsGaea {
     }]
 }
 
-export class Props implements PropsInterface {
+export class Props extends PropsGaea implements PropsInterface {
     flex = 1
     minHeight = 80
     justifyContent = 'flex-start'
