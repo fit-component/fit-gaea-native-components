@@ -9,13 +9,13 @@ export default class TextComponent extends React.Component <module.PropsInterfac
 
     render() {
         const style = {
-            fontSize: this.props.options['fontSize'].value
+            fontSize: this.props.fontSize
         }
 
         const otherProps = others(new module.Props(), this.props, null, true)
 
         return (
-            <Text {...otherProps} style={style}>{this.props.options['text'].value}</Text>
+            <Text {...otherProps} style={style}>{this.props.text}</Text>
         )
     }
 }

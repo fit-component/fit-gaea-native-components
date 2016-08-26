@@ -1,26 +1,28 @@
-export interface PropsInterface extends FitGaea.ComponentProps {
+export interface PropsInterface {
+    text?: string
+    fontSize?: number
 }
 
-export class Props implements PropsInterface {
-    name = '文字'
-    icon = 'font'
-    uniqueKey = 'gaea-text'
+export class PropsGaea {
+    gaeaName = '文字'
+    gaeaIcon = 'font'
+    gaeaUniqueKey = 'gaea-text'
+    gaeaEdit = [{
+        field: 'text',
+        label: '内容',
+        editor: 'text',
+        editable: true
+    }, {
+        field: 'fontSize',
+        label: '字体大小',
+        editor: 'text',
+        editable: true
+    }]
+}
 
-    options = {
-        text: {
-            label: '内容',
-            value: '段落文字',
-            editor: 'text',
-            editable: true
-        },
-
-        fontSize: {
-            label: '字体大小',
-            value: 14,
-            editor: 'text',
-            editable: true
-        }
-    } as any
+export class Props extends PropsGaea implements PropsInterface {
+    text = '段落文字'
+    fontSize = 14
 }
 
 export interface StateInterface {

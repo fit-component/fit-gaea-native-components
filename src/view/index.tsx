@@ -9,14 +9,14 @@ export default class LViewComponent extends React.Component <module.PropsInterfa
 
     render() {
         let style: any = {
-            flex: this.props.options['flex'].value,
-            minHeight: this.props.options['minHeight'].value,
-            backgroundColor: this.props.options['backgroundColor'].value,
-            flexDirection: this.props.options['flexDirection'].value,
-            flexWrap: this.props.options['flexWrap'].value,
-            justifyContent: this.props.options['justifyContent'].value,
-            alignItems: this.props.options['alignItems'].value,
-            overflow: this.props.options['overflow'].value
+            flex: this.props.flex,
+            minHeight: this.props.minHeight,
+            backgroundColor: this.props.backgroundColor,
+            flexDirection: this.props.flexDirection,
+            flexWrap: this.props.flexWrap,
+            justifyContent: this.props.justifyContent,
+            alignItems: this.props.alignItems,
+            overflow: this.props.overflow
         }
 
         const otherProps = others(new module.Props(), this.props, null, true)
