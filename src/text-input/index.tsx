@@ -9,7 +9,9 @@ export default class TextInputComponent extends React.Component <module.PropsInt
 
     render() {
         const style = {
-            fontSize: this.props.fontSize
+            fontSize: this.props.fontSize,
+            width: this.props.width,
+            height: this.props.height
         }
 
         const otherProps = others(new module.Props(), this.props, null, true)
