@@ -11,7 +11,8 @@ export default class TextInputComponent extends React.Component <module.PropsInt
         const style = {
             fontSize: this.props.fontSize,
             width: this.props.width,
-            height: this.props.height
+            height: this.props.height,
+            flex: this.props.flex
         }
 
         const otherProps = others(new module.Props(), this.props, null, true)

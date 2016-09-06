@@ -3,6 +3,7 @@ export interface PropsInterface {
     placeholder?: string
     width?: number
     height?: number
+    flex?: number
 }
 
 export class PropsGaea {
@@ -18,17 +19,27 @@ export class PropsGaea {
         field: 'placeholder',
         label: '占位符',
         editor: 'text',
-        editable: true
+        editable: true,
+        canNull: true
+    }, {
+        field: 'flex',
+        label: 'flex',
+        type: 'number',
+        editor: 'text',
+        editable: true,
+        canNull: true
     }, {
         field: 'width',
         label: '宽',
         editor: 'text',
-        editable: true
+        editable: true,
+        canNull: true
     }, {
         field: 'height',
         label: '高',
         editor: 'text',
-        editable: true
+        editable: true,
+        canNull: true
     }]
 }
 
@@ -37,6 +48,7 @@ export class Props extends PropsGaea implements PropsInterface {
     placeholder = '请输入内容'
     width = 200
     height = 25
+    flex = null as number
 }
 
 export interface StateInterface {
