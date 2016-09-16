@@ -8,7 +8,6 @@ export interface PropsInterface {
     alignItems?: string
     flexDirection?: string
     flexWrap?: string
-    flexGrow?: number
     backgroundColor?: string
     overflowX?: string
     overflowY?: string
