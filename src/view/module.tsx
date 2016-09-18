@@ -141,7 +141,7 @@ export class Props extends PropsGaea implements PropsInterface {
     minWidth = 0 as number
     justifyContent = 'flex-start'
     alignItems = 'stretch'
-    flexDirection = 'column'
+    flexDirection = 'row'
     flexWrap = 'nowrap'
     backgroundColor = 'white'
     overflowX = 'hidden'
