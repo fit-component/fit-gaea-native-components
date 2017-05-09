@@ -1,6 +1,6 @@
 {
   "name": "fit-gaea-native-components",
-  "version": "1.0.22",
+  "version": "1.0.25",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "react": "^0.14.0 || ^15.0.0",
-    "fit-transmit-transparently": "^3.1.50"
+    "fit-transmit-transparently": "^3.1.64"
   },
   "typings": "lib/index.d.ts"
 }
